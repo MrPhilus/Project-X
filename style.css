@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  transition: 0.9s all ease-in-out;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+i {
+  margin-top: 3rem;
+}
+
+.logo {
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+}
+.logo img {
+  width: 5rem;
+  filter: brightness(-100%);
+}
+.logoBtn {
+  border: none;
+  background: none;
+}
+.logoBtn:hover {
+  transform: scale(0.9);
+  transition: 0.2s all ease-in-out;
+}
+
+.sideBar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 5.2rem;
+  height: 100vh;
+  transition: all 0.3s linear;
+  box-shadow: 2px 0px 13px -6px rgba(0, 0, 0, 0.455);
+}
+.sideBar .logoText {
+  font-family: "Permanent Marker", cursive;
+  opacity: 0;
+}
+.sideBar ul li {
+  margin-top: 1.5rem;
+  line-height: 4rem;
+  list-style-type: none;
+}
+.sideBar ul li a {
+  display: grid;
+  border-radius: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  place-content: center;
+  place-items: center;
+}
+.sideBar ul li a:hover {
+  font-size: smaller;
+  transform: scale(0.9);
+  transition: 0.1s all ease-in-out;
+}
+.sideBar .navText {
+  margin-top: -0.5rem;
+  font-family: "Prompt", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.sideBar.active {
+  z-index: 2;
+  width: 10rem;
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.8px);
+}
+.sideBar.active .logoText {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.2rem;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+.sideBar.active .navText {
+  opacity: 1;
+}
+.sideBar.active .logoBtn {
+  transform: rotate(20deg);
+  transition: 0.4s all ease-in-out;
+}
+
+.sideBar ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-bottom: 4px solid transparent;
+  border-left: 2px solid transparent;
+  transform: translateX(100%);
+  box-sizing: border-box;
+}
+.sideBar ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transform: translateX(-100%);
+  box-sizing: border-box;
+}
+.sideBar ul li a:hover:before {
+  height: 100%;
+  border-color: #262626;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s,
+    0.05s border-color linear 0.2s;
+}
+.sideBar ul li a:hover:after {
+  height: 100%;
+  border-color: #262626;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s,
+    0.05s border-color linear 0.2s;
+}
+li:hover .navText {
+  opacity: 1;
+}
+
+.mainContent {
+  margin-left: 90px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.headImg {
+  z-index: 1;
+  min-width: 50%;
+  margin: auto;
+  margin-top: -18rem;
+  filter: drop-shadow(1rem 1.8rem 1rem rgba(54, 53, 53, 0.87));
+  animation: bounce 3s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.heroText {
+  width: 40rem;
+  font-family: "Prompt", sans-serif;
+  text-align: left;
+}
+.heroSection {
+  padding-top: 1rem;
+}
+.heroSection p {
+  text-align: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-left: 37rem;
+  margin-top: -30rem;
+  gap: 7rem;
+}

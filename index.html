@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://freepngimg.com/thumb/shoes/26593-1-vector-shoes-transparent-image.png">
+    <script
+      src="https://kit.fontawesome.com/8b463f7cca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Timer.css" />
+    <link rel="stylesheet" href="Products.css" />
+    <title>KicksVille</title>
+  </head>
+
+  <body>
+    <nav class="sideBar">
+      <div class="sideContent">
+        <div class="logo">
+          <button class="logoBtn">
+            <img
+              src="media/433a505e3f447549ecb8c7597e4da991-removebg-preview.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <span class="logoText">KicksVille</span>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-bag-shopping fa-xl"></i>
+              <span class="navText">Latest!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#signUpSection">
+              <i class="fa-solid fa-user-plus fa-xl"></i>
+              <span class="navText">Sign Up</span>
+            </a>
+          </li>
+          <li>
+            <a href="#products">
+              <i class="fa-solid fa-calendar-days fa-xl"></i>
+              <span class="navText">Upcoming</span>
+            </a>
+          </li>
+          <li>
+            <a href="#footerSection">
+              <i class="fa-solid fa-book fa-xl"></i>
+              <span class="navText">About Us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="mainContent">
+      <section class="heroSection">
+        <div class="heroText">
+          <h1>Air Flight Huarache</h1>
+          <h3>Varsity Purple and Royal Blue</h3>
+          <p style="text-align: left">
+            The Air Flight Huarache is back! The original Varsity Purple and
+            Royal Blue color scheme is just the beginning of your trip down
+            memory lane, this '92 classic scratches your itch for nostalgia.
+            Ready to give your foot a hug today?
+          </p>
+          <br />
+
+          <div class="card preOrderCard">
+            <div class="productImg">
+              <img src="media/Huarache_left.png" alt="" />
+              <span style="font-weight: 600;">&#8358 60,000</span>
+            </div>
+            <h2>Air Flight Huarache</h2>
+            <h3>Varsity Purple and Royal Blue</h3>
+            <hr class="divider" />
+            <div class="cardFooter">
+              <p class="promo">
+                Get as much as 15% off on preorder! Available from June 22.
+                <a href="#signUpSection"><button class="enter" id="preorder">pre-order</button></a>
+              </p>
+              <span id="orderplaced"></span>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div id="timer">
+            <div class="countdown-item">
+              <div class="countdown-label">Days</div>
+              <div id="days" class="countdown-value"></div>
+            </div>
+
+            <div class="countdown-item">
+              <div class="countdown-label">Hours</div>
+              <div id="hours" class="countdown-value"></div>
+            </div>
+
+            <div class="countdown-item">
+              <div class="countdown-label">Minutes</div>
+              <div id="minutes" class="countdown-value"></div>
+            </div>
+
+            <div class="countdown-item">
+              <div class="countdown-label">Seconds</div>
+              <div id="seconds" class="countdown-value"></div>
+            </div>
+          </div>
+
+          <div class="headImg">
+            <img src="media/Huarache_3d.png" alt="Image 1" />
+          </div>
+        </aside>
+      </section>
+      <hr />
+
+      <section class="form" id="signUpSection">
+        <form class="container">
+          <div class="signupCard">
+            <h2>Log in or Sign up to receive your discount offer!</h2>
+            <div class="inputBox">
+              <input type="email" name="email" required autocomplete="email" />
+              <label for="email">Email</label>
+            </div>
+
+            <div class="inputBox">
+              <input
+                type="text"
+                name="Username"
+                required
+                autocomplete="username"
+              />
+              <label for="Username">Username</label>
+            </div>
+
+            <div class="inputBox">
+              <input type="password" name="password" required />
+              <label for="password">Password</label>
+            </div>
+
+            <button class="enter" id="submitNotice">NOTIFY ME</button>
+            <br />
+            <span id="notify"></span>
+          </div>
+        </form>
+      </section>
+      <hr />
+
+
+      <section class="products" id="products">
+        <div class="upcoming">
+          <h1>Upcoming Deals</h1>
+        </div>
+        <div class="card">
+          <div class="productImg">
+            <img src="media/Nike_Vandal.png" alt="" />
+          </div>
+          <h2>Nike Vandal High x Stüssy</h2>
+          <h3>Deep Royal Blue</h3>
+          <hr class="divider" />
+          <div class="cardFooter">
+            <p>Coming Soon</p>
+            <span>Pre-order from June 29</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="productImg">
+            <img src="media/Zoom_Vomero_5.png" alt="" />
+          </div>
+          <h2>Zoom Vomero 5</h2>
+          <h3>Yellow Ochre</h3>
+          <hr class="divider" />
+          <div class="cardFooter">
+            <p>Coming Soon</p>
+            <span>Pre-order from July 18</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="productImg">
+            <img src="media/Women_s_AF1.png" alt="" />
+          </div>
+          <h2>Women's Air Force 1 '07</h2>
+          <h3>Obsidian and Gorge Green</h3>
+          <hr class="divider" />
+          <div class="cardFooter">
+            <p>Coming Soon</p>
+            <span>Pre-order from July 30</span>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section class="footer" id="footerSection">
+        <h2 class="footerlogoText">KicksVille™</h2>
+        <p>Discover the perfect blend of fashion and function with our exclusive collection of premium sneakers. Elevate your footwear game and make a statement wherever you go. Whether you're an avid athlete or a fashion enthusiast, our sneakers are designed to cater to your unique style and performance needs.</p>
+        <br>
+        <p>Shop with confidence knowing that quality is our top priority. We partner with renowned brands and manufacturers to offer you the finest sneakers that blend style, comfort, and durability. With every purchase, you're investing in footwear that will exceed your expectations and provide unmatched value.</p>
+
+        <div class="linkContainer">
+          <div class="footerLinks">
+            <ul>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div>
+
+          <div class="footerLinks">
+            <ul>
+              <li><a href="#">Find A Store</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Send Us Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="socialsContainer">
+          <ul>
+            <div class="socials">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f fa-xl"></i>
+                </a>
+              </li>
+            </div>
+
+            <div class="socials">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+              </li>
+            </div>
+
+            <div class="socials">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

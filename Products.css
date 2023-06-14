@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-family: "Prompt", sans-serif;
+  gap: 3rem;
+  place-items: center;
+}
+
+.card {
+  z-index: 1;
+  width: 15rem;
+  height: 25rem;
+  margin-top: 10rem;
+  border: 3px solid #000;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.8px);
+}
+.card:hover {
+  transition: 0.3s all ease-in-out;
+  box-shadow: 15px 15px 0 -2.5px #fff, 15px 15px 0 0 #000;
+}
+.card:hover .productImg img {
+  transform: rotate(-20deg);
+  transition: transform 0.3s ease-in-out;
+}
+.card .productImg img {
+  transition: transform 0.3s ease-in-out;
+}
+.card:not(:hover) .productImg img {
+  transform: rotate(0);
+}
+
+.productImg {
+  width: 100%;
+}
+.productImg img {
+  width: 100%;
+  height: 15rem;
+  margin-top: -1.5rem;
+}
+
+.preOrderCard {
+  margin: auto;
+  margin-left: 8rem;
+}
+
+#preorder {
+  margin-top: 0.1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: small;
+}
+
+.divider {
+  margin-bottom: 2rem;
+}
+
+.promo {
+  margin-top: -2rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.footer {
+  height: 70vh;
+  font-family: "Prompt", sans-serif;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 4rem;
+}
+.footerLinks {
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.socialsContainer ul {
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  gap: 1.5rem;
+}
+.socials {
+  margin-bottom: 1rem;
+}
+.socials i:hover {
+  transform: scale(0.9);
+}
+
+.footerlogoText {
+  text-align: center;
+  font-family: "permanent marker", cursive;
+  font-size: 2rem;
+}
+.footerImg {
+  width: 5rem;
+  filter: brightness(-100%);
+}
