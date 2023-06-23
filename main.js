@@ -14,29 +14,29 @@ function handleClickOutside(event) {
 logo.addEventListener("click", toggleNav);
 window.addEventListener("click", handleClickOutside);
 
-//positioning the nav
-let sideNav = document.getElementsByClassName("sideBar")[0],
-  sideNavContent = document.getElementsByClassName("sideContent")[0];
-//getting nav position
-window.onscroll = () => {
-  let scrollTop = window.scrollY, // current scroll position
-    viewportHeight = window.innerHeight, // viewport height
-    contentHeight = sideNavContent.getBoundingClientRect().height, // current content height
-    sidebarTop = sideNav.getBoundingClientRect().top; // distance from top to sidebar
+// //positioning the nav
+// let sideNav = document.getElementsByClassName("sideBar")[0],
+//   sideNavContent = document.getElementsByClassName("sideContent")[0];
+// //getting nav position
+// window.onscroll = () => {
+//   let scrollTop = window.scrollY, // current scroll position
+//     viewportHeight = window.innerHeight, // viewport height
+//     contentHeight = sideNavContent.getBoundingClientRect().height, // current content height
+//     sidebarTop = sideNav.getBoundingClientRect().top; // distance from top to sidebar
 
-  //checks the sidenav and fixes the position
-  if (scrollTop >= contentHeight - viewportHeight + sidebarTop) {
-    sideNav.style.position = "fixed";
-    sideNav.style.top = `${viewportHeight - sideNav.offsetHeight}px`;
-  } else {
-    sideNav.style.position = "";
-    sideNav.style.top = "";
-  }
-};
+//   //checks the sidenav and fixes the position
+//   if (scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+//     sideNav.style.position = "fixed";
+//     sideNav.style.top = `${viewportHeight - sideNav.offsetHeight}px`;
+//   } else {
+//     sideNav.style.position = "";
+//     sideNav.style.top = "";
+//   }
+// };
 
 //Timer
 //Deadline date
-var countdownDate = new Date("June 22, 2023 00:00:00").getTime();
+var countdownDate = new Date("June 25, 2023 00:00:00").getTime();
 
 var countdownTimer = setInterval(function () {
   // Get the current date and time

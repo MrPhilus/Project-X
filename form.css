@@ -22,7 +22,8 @@
 
 .inputBox {
   position: relative;
-  width: 50%;
+  width: 40rem;
+  /* outline: 1px solid red; */
 }
 
 .inputBox input {
